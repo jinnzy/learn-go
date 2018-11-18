@@ -9,14 +9,15 @@ import "fmt"
 //	*b = tmp
 //	return
 //}
-func swap(a int,b int) (int int) {
-
+func swap(a int,b int) (int, int) {
+	return b, a
 }
 
 func main()  {
 	first := 100
 	second := 200
-	first,second = second
+	first, second = swap(first, second) // 第二种
+	// first, second = second, first // 第三种
 	fmt.Println("first=",first)
 	fmt.Println("second=",second)
 }
