@@ -10,6 +10,6 @@ func add(a int,arg...int) int {
 	return a
 }
 func main()  {
-	a := add(1,2,4,4,5,6,6*)
+	a := add(1,2,4,4,5,6,6)
 	fmt.Println(a)
 }

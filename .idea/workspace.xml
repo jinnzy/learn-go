@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fb43cdf-3bb7-471e-b908-e877abaf2aeb" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/day3/add_int_test/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/add_int_test/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/day3/add_int_test/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/time/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/day3/time/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,27 +28,28 @@
     <session id="1716915471">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="2391" />
+          <entry key="go" value="2579" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="2391" />
+          <entry key="Go" value="2579" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -118,14 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day3/time/main.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="1" />
-              <folding>
-                <element signature="e#14#39#0" expanded="true" />
-              </folding>
+              <caret line="4" selection-start-line="4" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -145,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day3/zhizhen/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="190">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -154,8 +153,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day3/iftest/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="266">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <element signature="e#14#42#0" expanded="true" />
               </folding>
@@ -193,9 +192,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day3/add_int_test/main.go">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -221,7 +224,6 @@
         <option value="$PROJECT_DIR$/day2/swap/main/main.go" />
         <option value="$PROJECT_DIR$/day2/example/example1_2/main.go" />
         <option value="$PROJECT_DIR$/day2/example1/main/main.go" />
-        <option value="$PROJECT_DIR$/day3/time/main.go" />
         <option value="$PROJECT_DIR$/day3/time2/main.go" />
         <option value="$PROJECT_DIR$/day3/zhizhen2/main.go" />
         <option value="$PROJECT_DIR$/day3/zhizhen/main.go" />
@@ -231,6 +233,7 @@
         <option value="$PROJECT_DIR$/day3/fortest/main.go" />
         <option value="$PROJECT_DIR$/day3/fortest2/main.go" />
         <option value="$PROJECT_DIR$/day3/add_int_test/main.go" />
+        <option value="$PROJECT_DIR$/day3/time/main.go" />
       </list>
     </option>
   </component>
@@ -253,6 +256,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,11 +269,22 @@
               <item name="learn-go" type="462c0819:PsiDirectoryNode" />
               <item name="day3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="learn-go" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-go" type="462c0819:PsiDirectoryNode" />
+              <item name="day3" type="462c0819:PsiDirectoryNode" />
+              <item name="add_int_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-go" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-go" type="462c0819:PsiDirectoryNode" />
+              <item name="day3" type="462c0819:PsiDirectoryNode" />
+              <item name="time" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,7 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Build.go build main.go (3)">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learn-go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -311,12 +326,12 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learn-go" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/day3/switch-case/main.go" />
+      <filePath value="$PROJECT_DIR$/day3/time/main.go" />
       <package value="github.com/learn-go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -342,19 +357,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go (4)" />
       <item itemvalue="Go Build.go build main.go (5)" />
       <item itemvalue="Go Build.go build main.go (1)" />
       <item itemvalue="Go Build.go build main.go (2)" />
       <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build main.go (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (3)" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go (5)" />
-        <item itemvalue="Go Build.go build main.go (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -369,9 +384,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="647" y="0" width="697" height="735" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30612245" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32496077" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -383,9 +397,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294509" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294509" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.327787" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.327787" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="运行" order="11" visible="true" weight="0.23128119" />
+      <window_info anchor="bottom" id="运行" order="11" weight="0.23128119" />
       <window_info anchor="bottom" id="调试" order="12" />
       <window_info anchor="bottom" id="找到" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -476,16 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day3/time/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day3/time2/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -498,18 +502,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day3/zhizhen/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day3/iftest/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -537,8 +531,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day3/iftest/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day3/add_int_test/main.go">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day3/time/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
