@@ -2,14 +2,15 @@ package main
 
 import "fmt"
 
-func test(a int,b int) int{
-	result := func(a1 int,b1 int) int {
-		// 定义一个匿名函数
-		return a1 + b1
-	}(a,b) // 定义的时候直接调用，定义完这样调用result(a,b)
-
-	return result
+func modify(arr *[5]int)  {
+	// arr *[5]int 声明一个指针类型的数组
+	(*arr)[0] = 100 // 获取arr指向地址的值进行修改
+	return
 }
 func main()  {
-	fmt.Println(test(100,200))
+	var a [5]int
+	modify(&a)
+	for i := 0;i < len(a); i++{
+		fmt.Println(a[i])
+	}
 }
