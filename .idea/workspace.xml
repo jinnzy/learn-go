@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fb43cdf-3bb7-471e-b908-e877abaf2aeb" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day3/time/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/day3/time/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,18 +37,19 @@
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="3009" />
+          <entry key="go" value="3542" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="3009" />
+          <entry key="Go" value="3542" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -123,8 +123,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day3/time/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="-48">
+              <caret line="4" selection-start-line="4" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -244,9 +244,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="582" />
-    <option name="y" value="1" />
-    <option name="width" value="697" />
+    <option name="x" value="576" />
+    <option name="y" value="10" />
+    <option name="width" value="752" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -257,7 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,6 +285,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,10 +384,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="582" y="1" width="697" height="735" extended-state="0" />
+    <frame x="576" y="10" width="752" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3469388" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32947975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -401,7 +401,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294509" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.327787" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="运行" order="11" visible="true" weight="0.23128119" />
+      <window_info active="true" anchor="bottom" id="运行" order="11" visible="true" weight="0.3044925" />
       <window_info anchor="bottom" id="调试" order="12" />
       <window_info anchor="bottom" id="找到" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -552,8 +552,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day3/time/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="-48">
+          <caret line="4" selection-start-line="4" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>
