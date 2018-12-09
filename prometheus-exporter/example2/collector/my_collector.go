@@ -70,8 +70,6 @@ func (c *Metrics) Collect(ch chan<- prometheus.Metric) {
 		ch <-prometheus.MustNewConstMetric(c.metrics["my_gauge_metric"], prometheus.GaugeValue, float64(currentValue), host)
 	}
 }
-
-
 /**
  * 函数：GenerateMockData
  * 功能：生成模拟数据

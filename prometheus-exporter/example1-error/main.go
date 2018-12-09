@@ -32,8 +32,8 @@ var (
 	// Create a summary to track fictional interservice RPC latencies for three
 	// distinct services with different latency distributions. These services are
 	// differentiated via a "service" label.
-	numCont = prometheus.NewCounter(
-		prometheus.CounterOpts{
+	numCont = prometheus.NewGauge(
+		prometheus.GaugeOpts{
 			Name: "test_for_num",
 			Help: "test_for_num_help",
 		})
@@ -95,7 +95,19 @@ func main() {
 	reg.MustRegister(workerDB)
 	reg.MustRegister(workerCA)
 
-	http.Handle("/metrics", promhttp.Handler())
+	gatherers := prometheus.Gatherers{
+		prometheus.DefaultGatherer,
+		reg,
+	}
+
+	h := promhttp.HandlerFor(gatherers,
+		promhttp.HandlerOpts{
+			ErrorHandling: promhttp.ContinueOnError,
+		})
+
+	http.HandleFunc("/metrics", func(w http.ResponseWriter, r *http.Request) {
+		h.ServeHTTP(w, r)
+	})
 
 	log.Fatal(http.ListenAndServe(*addr, nil))
 

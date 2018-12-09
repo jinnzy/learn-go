@@ -5,7 +5,7 @@ import (
 	"flag"
 	"net/http"
 
-	"github.com/learn-go/prometheus-exporter/collector"
+	"github.com/learn-go/prometheus-exporter/example2/collector"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )

@@ -1,45 +1,31 @@
 package main
 
-import (
-	"fmt"
-	"math/rand"
-)
+import "fmt"
 
 type Student struct {
 	Name string
-	Age int		// Age大写是公开的包外可以访问，和函数的一样
-	score float32
-	next *Student // 值默认是nil ，指针类型，留着存指向下一个链表的地址
+	Age int
+	Score int
 }
-func travers(p *Student)  {
-	//var p *Student = &head // 定义一个指针变量类型是Student的，指向的是head头的地址
-	// 循环放到函数里了 所以上面注释掉
-	for p != nil {
-		fmt.Println(*p)
-		p = p.next // 和 (*p).next写法一样，指向下一个节点，继续循环
-	}
-}
-func insertTail(p *Student)  {
-	// 先传进来头部地址
-	tail := p // tail指向头部地址
-	for i := 0;i < 10; i++ {
-		// 循环创建结构体节点
-		stu := Student{
-			Name: fmt.Sprintf("stu%d", i),
-			Age: rand.Intn(100),
-			score: rand.Float32() * 100,
-		}
-		// 创建完节点之后，把tauk.next地址指向刚创建的结构体节点stu
-		tail.next = &stu
-		tail = &stu // 然后再把stu地址传给tail，tail就是最后一个节点，继续循环，会一直把新生成的结构体节点加入到最后。
-	}
-}
-func main()  {
-	var head Student
-	head.Name = "hua"
-	head.Age = 18
-	head.score= 100
 
-	insertTail(&head)
-	travers(&head)
+func (p *Student) init(name string,age int,score int) {
+	// 要接收指针类型，下面的修改才会生效
+	// p代表当前这个struct的实例、
+	// 在Student类型中定义一个这个方法
+	p.Name = name
+	p.Age = age
+	p.Score = score
+	fmt.Println(p)
+}
+func (p Student) get() Student  {
+	// Student 是返回值
+	return p
+}
+func main() {
+	var stu Student // 初始化类型，这里p就等于stu
+	//(&stu).init("stu",10,200) // 调用类型中的方法，传入地址
+	stu.init("stu",10,200)  //上面那样写很麻烦，go会自动帮你转成指针
+	// stu.init 传入的和函数一样是一个副本，要传入地址才行，用(&stu)
+	stu1 := stu.get()
+	fmt.Println(stu1)
 }
