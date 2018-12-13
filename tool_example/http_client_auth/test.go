@@ -6,7 +6,8 @@ import (
 	"fmt"
 	"encoding/json"
 
-	)
+	"reflect"
+)
 
 func HttpGetMqtt() []byte {
 	// 生成http client
@@ -46,11 +47,22 @@ func main()  {
 	if err != nil {
 		fmt.Println("json err",err)
 	}
-	switch vv := f.Result.(type) {
-	case interface{}:
-		fmt.Println(vv)
-		bb :=
-	default:
-		fmt.Println("is of a type I don’t know how to handle")
-	}
+	fmt.Println(f.Result)
+	//switch vv := f.Result.(type) {
+	//case interface{}:
+	//	//for k,v := range vv.(map[string]interface{}){
+	//	//	fmt.Println(k)
+	//	//	fmt.Println(v)
+	//	//}
+	fmt.Println(reflect.TypeOf(f.Result))
+	//t1 := make([]interface{},0)
+	//var t1 intertest in
+	//t1 := f.Result
+	//fmt.Println(reflect.TypeOf(t1))
+	//fmt.Println(f.Result[0])
+	//	//fmt.Println(vv[0])
+	//	var interfaceSlice []interface{} = make([]interface{}, 1)
+	//
+	//default:
+	//	fmt.Println("is of a type I don’t know how to handle")
 	}
