@@ -37,8 +37,10 @@ func newGlobalMetric(namespace string, metricName string, docString string, labe
  */
 func NewMetrics(namespace string) *Metrics {
 	return &Metrics{
+		// 返回Metrics 结构是 metrics: 字典key为string  value为prometheus.Desc
 		metrics: map[string]*prometheus.Desc{
-			"my_counter_metric": newGlobalMetric(namespace, "my_counter_metric", "说明测试1", []string{"host"}),
+			// 新增label在[]string切片里增加
+			"my_counter_metric": newGlobalMetric(namespace, "my_counter_metric", "说明测试1", []string{"host","label1"}),
 			"my_gauge_metric": newGlobalMetric(namespace, "my_gauge_metric","说明测试2", []string{"host"}),
 		},
 	}
@@ -64,7 +66,7 @@ func (c *Metrics) Collect(ch chan<- prometheus.Metric) {
 
 	mockCounterMetricData, mockGaugeMetricData := c.GenerateMockData()
 	for host, currentValue := range mockCounterMetricData {
-		ch <-prometheus.MustNewConstMetric(c.metrics["my_counter_metric"], prometheus.CounterValue, float64(currentValue), host)
+		ch <-prometheus.MustNewConstMetric(c.metrics["my_counter_metric"], prometheus.CounterValue, float64(currentValue), host,"label1")
 	}
 	for host, currentValue := range mockGaugeMetricData {
 		ch <-prometheus.MustNewConstMetric(c.metrics["my_gauge_metric"], prometheus.GaugeValue, float64(currentValue), host)
