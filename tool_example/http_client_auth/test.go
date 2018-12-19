@@ -4,15 +4,10 @@ import (
 	"net/http"
 	"io/ioutil"
 	"fmt"
-<<<<<<< HEAD
 	"github.com/bitly/go-simplejson"
-	)
-=======
 	"encoding/json"
-
 	"reflect"
 )
->>>>>>> 2ebd1f6c6b740981101471d870eb66ad5112417f
 
 func HttpGetMqtt() []byte {
 	// 生成http client
@@ -52,7 +47,6 @@ func main()  {
 	if err != nil{
 		fmt.Println(err)
 	}
-<<<<<<< HEAD
 	//fmt.Println(res.Get("result").Array())
 	// 获取result下的数组
 	a,err := res.Get("result").Array()
@@ -76,7 +70,7 @@ func main()  {
 	//	fmt.Println("is of a type I don’t know how to handle")
 	//}
 	}
-=======
+
 	fmt.Println(f.Result)
 	//switch vv := f.Result.(type) {
 	//case interface{}:
@@ -96,4 +90,4 @@ func main()  {
 	//default:
 	//	fmt.Println("is of a type I don’t know how to handle")
 	}
->>>>>>> 2ebd1f6c6b740981101471d870eb66ad5112417f
+
