@@ -1,5 +1,9 @@
 package v1
 
+import (
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+)
+
 // +genclient
 // +genclient:noStatus
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
@@ -17,10 +21,15 @@ type Network struct {
 	//  - ... etc ...
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Spec networkspec `json:"spec"`
+	// Spec is the custom resource spec
+	Spec NetworkSpec `json:"spec"`
 }
-// networkspec is the spec for a Network resource
-type networkspec struct {
+
+// NetworkSpec is the spec for a Network resource
+type NetworkSpec struct {
+	// Cidr and Gateway are example custom spec fields
+	//
+	// this is where you would put your custom resource data
 	Cidr    string `json:"cidr"`
 	Gateway string `json:"gateway"`
 }
