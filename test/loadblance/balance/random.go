@@ -1,4 +1,4 @@
-package blance
+package balance
 
 import (
 	"github.com/pkg/errors"
