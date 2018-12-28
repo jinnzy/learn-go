@@ -12,6 +12,7 @@ const (
 
 
 func main() {
-	http.HandleFunc(path,webhook.)
+
+	http.HandleFunc(path,webhook.CreateJob)
 	http.ListenAndServe(":9000", nil)
 }

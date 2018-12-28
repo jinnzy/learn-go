@@ -2,37 +2,39 @@ package main
 
 import (
 	"fmt"
-	"strings"
+	"reflect"
 )
 
-func urlProcess(url string) string {
-	result := strings.HasPrefix(url,"http://")
-	if !result {
-		url = fmt.Sprintf("http://%s",url)
-	}
-	return url
-}
+func dn() {
+	var m = make(map[string]int)
+	m["sdf"] = 1
+	m["sdf1"] = 1
 
-func pathProcess(path string) string {
-	result := strings.HasSuffix(path,"/")
-	if !result {
-		path = fmt.Sprintf("%s/",path)
-	}
-	return path
-}
+	type sdra map[string]int
+	//type sdra  map[string]interface{}
 
+	var dragon = make(map[string]interface{})
+	dragon["abs"] = 1
+	dragon["absd"] = nil
+	dragon["asbd"] = m
+
+//for v, s := range dragon {
+//if t, ok := s.(sdra); ok {
+//fmt.Println("s是sdra类型:", t)
+//}
+//fmt.Println(v, reflect.TypeOf(s))
+//a := reflect.ValueOf(v)
+//fmt.Println("kind:",v, a.Kind())
+//}
+	for v, s := range dragon {
+		if t, ok := s.(sdra); ok {
+			fmt.Println("s是sdra类型:", t)
+		}
+		fmt.Println(v, reflect.TypeOf(s))
+	}
+}
 
 
 func main()  {
-	var (
-		url string
-		path string
-	)
-
-	fmt.Scanf("%s %s",&url,&path)
-	url = urlProcess(url)
-	path = pathProcess(path)
-
-	fmt.Println(url)
-	fmt.Println(path)
+	dn()
 }
