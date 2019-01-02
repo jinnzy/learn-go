@@ -3,7 +3,7 @@ package balance
 import (
 	"github.com/pkg/errors"
 )
-// 随机
+// 轮询
 type RoundRobinBalance struct {
 	curIndex int // 存当前选择的主机
 }
@@ -15,10 +15,13 @@ func (p *RoundRobinBalance) DoBalance(insts []*Instance) (inst *Instance,err err
 		err = errors.New("No interface")
 		return
 	}
+	//fmt.Println(p.curIndex)
 	if p.curIndex >= lens { // 大于等于是因为数组最大下标是长度-1，所以找不到对应值把curlIndex设置为0
 		p.curIndex = 0
 	}
 	inst = insts[p.curIndex]
+	p.curIndex = (p.curIndex + 1) % lens
+
 	//p.curIndex = (p.curIndex + 1) % lens # + 1 取余，和上面的类似都是防止越界
 	return
 }
