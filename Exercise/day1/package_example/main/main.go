@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/learn-go/day1/package_example/calc"
+	"github.com/learn-go/Exercise/day1cise/day1/package_example/calc"
 	"fmt"
 )
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/learn-go/day1/goroute_example/goroute"
+	"github.com/learn-go/Exercise/day1cise/day1/goroute_example/goroute"
 	"fmt"
 )
 
