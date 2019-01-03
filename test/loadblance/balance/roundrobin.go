@@ -4,11 +4,15 @@ import (
 	"github.com/pkg/errors"
 )
 // 轮询
+func init() {
+	// 程序启动就会把随机算法注册到mgr里
+	RegisterBalancer("roundRobin",&RoundRobinBalance{})
+}
 type RoundRobinBalance struct {
 	curIndex int // 存当前选择的主机
 }
 // 定义方法名为DoBalance
-func (p *RoundRobinBalance) DoBalance(insts []*Instance) (inst *Instance,err error) {
+func (p *RoundRobinBalance) DoBalance(insts []*Instance,key ...string) (inst *Instance,err error) {
 	// 实例为0，报错返回err值
 	lens := len(insts) // 传进来的主机数量
 	if lens == 0 {

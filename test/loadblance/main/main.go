@@ -13,10 +13,12 @@ func main() {
 		one := balance.NewInstance(host, 8080)
 		insts = append(insts,one)
 	}
-	fmt.Println(insts[0])
-	balancer := &balance.RoundRobinBalance{}
+	var balanceName = "hash"
+	//fmt.Println(insts[0])
+	//balancer := &balance.RoundRobinBalance{} // 轮询
+	//balancer := &balance.RandomBalance{} // 随机
 	for {
-		inst,err := balancer.DoBalance(insts)
+		inst,err := balance.DoBalance(balanceName,insts)
 		if err !=nil{
 			fmt.Println("do balance err:",err)
 			continue
