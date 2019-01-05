@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/learn-go/test/loadblance/balance"
-	"hash/crc64"
-	"fmt"
+		"fmt"
 	"math/rand"
+	"hash/crc32"
 )
 func init() {
 	balance.RegisterBalancer("hash",&HashBalance{})
@@ -27,9 +27,9 @@ func (p *HashBalance) DoBalance(insts []*balance.Instance,key ...string) (inst *
 		err = fmt.Errorf("No backend instance")
 		return
 	}
-	crcTable := crc64.MakeTable(crc64.ECMA) // 固定用法
-	hashval := crc64.Checksum([]byte(defkey),crcTable) // 把table传进去
-	index := int(hashval)% lens  //类型uint64强制转成int
+	crcTable := crc32.MakeTable(crc32.IEEE) // 固定用法
+	hashval := crc32.Checksum([]byte(defkey),crcTable) // 把table传进去
+	index := int(hashval)% lens  //crc64类型uint64强制转成int，可能会变成负数，这里换成crc32
 	inst = insts[index]
 	return
 }
