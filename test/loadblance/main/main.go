@@ -5,8 +5,10 @@ import (
 	"fmt"
 	"math/rand"
 	"time"
+	"github.com/pkg/errors"
 )
 func main() {
+	errors.New()
 	insts := make([]*balance.Instance,0) // 声明一个空切片
 	for i := 0;i < 16;i++ {
 		host := fmt.Sprintf("192.168.%d.%d",rand.Intn(255),rand.Intn(255))// sprintf不会打印结果，会以字符串返回
