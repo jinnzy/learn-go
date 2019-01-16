@@ -1,22 +1,35 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	var ch chan int
 	ch = make(chan int , 10)
-	for i :=0;i<10;i++ {
-		ch <- i
-	}
-	close(ch)  // 关闭ch管道
-	for {
-		var b int
-		b,ok := <-ch // ok是为了检测channel关闭了，不检测的话塞入10个数据之后关闭，这边读取10个之后会一直是死循环
-		// of - false说明管道已经关闭
-		if ok == false {
-			fmt.Println("chan is close")
-			break
+	ch2 := make(chan int,10)
+	go func() {
+		for i := 0; i < 10; i++ {
+			ch <- i
+			time.Sleep(time.Second)
+			ch2 <- i*i
+
 		}
-		fmt.Println(b)
+	}()
+	for {
+		select {
+		// select作用是防止阻塞，如 ch取完数据了，就会马上走default分支
+		// 取不到数据就走默认分支，有数据的话在处理数据
+		case v := <-ch:
+			fmt.Println(v)
+		case v := <-ch2:
+			fmt.Println(v)
+		case <- time.After(time.Second):
+			// 丢到值，time.After也是一个channel
+			// 1秒没返回走这个分支，
+			fmt.Println("get data timeout")
+			time.Sleep(time.Second)
+		}
 	}
 }
