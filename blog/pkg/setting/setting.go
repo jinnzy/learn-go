@@ -4,6 +4,7 @@ import (
 	"github.com/go-ini/ini"
 	"log"
 	"time"
+	"fmt"
 )
 
 var (
@@ -23,6 +24,9 @@ func init() {
 	if err != nil {
 		log.Fatalf("Fail to parse 'conf/app.ini': %v", err)
 	}
+	LoadBase()
+	LoadServer()
+	LoadApp()
 }
 func LoadBase(){
 	// 由 Must 开头的方法名允许接收一个相同类型的参数来作为默认值，
@@ -39,6 +43,7 @@ func LoadServer() {
 	}
 
 	HttpPort = sec.Key("HTTP_PORT").MustInt(8000)
+	fmt.Println("http port:",HttpPort)
 	ReadTimeout = time.Duration(sec.Key("READ_TIMEOUT").MustInt(60)) * time.Second
 	WriteTimeout = time.Duration(sec.Key("WRITE_TIMEOUT").MustInt(60)) * time.Second
 }
@@ -50,7 +55,6 @@ func LoadApp() {
 	}
 	JwtSecret = sec.Key("JWT_SECRET").MustString("!@)*#)!@U#@*!@!)")
 	PageSize = sec.Key("PAGE_SIZE").MustInt(10)
-
 }
 
 
