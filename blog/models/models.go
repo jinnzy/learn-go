@@ -3,6 +3,7 @@ package models
 import (
 	"github.com/jinzhu/gorm"
 	"github.com/learn-go/blog/pkg/setting"
+	_ "github.com/go-sql-driver/mysql"
 	"fmt"
 	"log"
 )
@@ -27,9 +28,9 @@ func init() {
 	dbName = sec.Key("NAME").String()
 	user = sec.Key("USER").String()
 	password = sec.Key("PASSWORD").String()
-	host = sec.Key("NAME").String()
-	tablePrefix = sec.Key("blog_").String()
-
+	host = sec.Key("HOST").String()
+	tablePrefix = sec.Key("TABLE_PREFIX").String()
+	fmt.Printf("%s:%s@tcp(%s)/%s?charset=utf8&parseTime=True&loc=Local",user,password,host,dbName)
 	db,err = gorm.Open(dbType,fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8&parseTime=True&loc=Local",user,password,host,dbName))
 
 	if err != nil {
@@ -42,6 +43,7 @@ func init() {
 	db.SingularTable(true)
 	db.DB().SetMaxIdleConns(10)
 	db.DB().SetMaxOpenConns(100)
+	db.LogMode(true)
 }
 func CloseDb()  {
 	defer db.Close()

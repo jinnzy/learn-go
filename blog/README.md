@@ -39,8 +39,10 @@ CREATE TABLE `blog_auth` (
 
 INSERT INTO `blog`.`blog_auth` (`id`, `username`, `password`) VALUES (null, 'test', 'test123456');
 ```
-依赖：
+包：
 ```
 beego的表单验证
 govendor fetch github.com/astaxie/beego/validation
+mysql driver
+github.com/go-sql-driver/mysql
 ```

@@ -10,6 +10,5 @@ func main()  {
 	pipe := make(chan int,2)
 	go goroute.Add(2,3,pipe)
 	sum :=  <- pipe
-
 	fmt.Println(sum)
 }
