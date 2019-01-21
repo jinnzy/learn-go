@@ -63,12 +63,12 @@ func GetArticle(id int) (article Article) {
 	// SELECT * FROM `blog_tag`  WHERE (`id` = '1') 然后返回结构体
 }
 
-func EditArtice(id int,data interface{}) bool {
+func EditArticle(id int,data interface{}) bool {
 	db.Model(&Article{}).Where("id = ?",id).Updates(data)
 	return true
 }
 
-func AddArtice(data map[string]interface{}) bool {
+func AddArticle(data map[string]interface{}) bool {
 	db.Create(&Article{
 		TagID: data["tag_id"].(int),
 		Title : data["title"].(string),
@@ -80,6 +80,7 @@ func AddArtice(data map[string]interface{}) bool {
 	return true
 }
 
-func DeleteArtice(id int) bool {
+func DeleteArticle(id int) bool {
 	db.Where("id = ?", id).Delete(Article{})  // 删除操作，没有数据返回传入值类型就行
+	return true
 }
