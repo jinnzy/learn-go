@@ -46,3 +46,10 @@ govendor fetch github.com/astaxie/beego/validation
 mysql driver
 github.com/go-sql-driver/mysql
 ```
+
+api 
+```
+tag:
+127.0.0.1:8000/api/v1/tags  获取所有tag
+
+```
