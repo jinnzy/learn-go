@@ -1,22 +1,29 @@
 package main
 
 import (
-"net/http"
-
-"github.com/gin-gonic/gin"
-)
+	"net/http"
+	"fmt"
+	"github.com/learn-go/cmdb/pkg/setting"
+	"github.com/learn-go/cmdb/routers"
+	)
 
 func main() {
-	router := gin.Default()
+	router := routers.InitRouter()
+	//a := models.GetArticle(1	)
+	//fmt.Println(a)
 
-	// 查询字符串参数使用现有的底层 request 对象解析。
-	// 请求响应匹配的 URL： /welcome?firstname=Jane&lastname=Doe
-	router.GET("/welcome", func(c *gin.Context) {
-		firstname := c.DefaultQuery("firstname", "Guest")
-		// 这个是 c.Request.URL.Query().Get("lastname") 的快捷方式。
-		lastname := c.Query("lastname")
+	//maps := make(map[string]interface{})
+	//maps["state"] = 1
+	//a := models.GetArticles(0,2,maps)
+	//fmt.Println(a)
 
-		c.String(http.StatusOK, "Hello %s %s", firstname, lastname)
-	})
-	router.Run(":8080")
+	fmt.Println(setting.HttpPort,setting.ReadTimeout,setting.WriteTimeout)
+	s := &http.Server{
+		Addr: fmt.Sprintf(":%d",setting.HttpPort),
+		Handler: router,
+		ReadTimeout: setting.ReadTimeout,
+		WriteTimeout: setting.WriteTimeout,
+		MaxHeaderBytes: 1 << 20,
+	}
+	s.ListenAndServe()
 }

@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 	"fmt"
-	"github.com/learn-go/blog/pkg/setting"
-	"github.com/learn-go/blog/routers"
+	"github.com/learn-go/cmdb/pkg/setting"
+	"github.com/learn-go/cmdb/routers"
 	)
 
 func main() {

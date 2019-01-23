@@ -2,7 +2,7 @@ package models
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/learn-go/blog/pkg/setting"
+	"github.com/learn-go/cmdb/pkg/setting"
 	_ "github.com/go-sql-driver/mysql"
 	"fmt"
 	"log"
