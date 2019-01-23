@@ -108,7 +108,7 @@ func AddArticle(c *gin.Context)  {
 	err := c.BindJSON(&addArticlesBody)
 	if err != nil {
 		log.Println(err)
-		// 这个位置有警告回头看下 [GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 200
+		// 这个位置有警告回头看下22322222222 [GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 200
 		c.JSON(200, gin.H{"errcode": 400, "description": "Post Data Err"})
 		return
 	}
