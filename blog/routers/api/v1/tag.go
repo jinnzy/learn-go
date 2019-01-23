@@ -5,8 +5,7 @@ import (
 	"github.com/Unknwon/com"
 	"github.com/learn-go/blog/pkg/e"
 	"github.com/learn-go/blog/models"
-	"log"
-	"github.com/learn-go/blog/pkg/setting"
+		"github.com/learn-go/blog/pkg/setting"
 	"github.com/learn-go/blog/pkg/util"
 	"net/http"
 	"github.com/astaxie/beego/validation"
@@ -33,8 +32,8 @@ func GetTags(c *gin.Context) {
 		maps["state"] = state
 	}
 	code := e.SUCCESS
-	log.Println("c的值是:",c)
 	data["lists"] = models.GetTags(util.GetPage(c),setting.PageSize, maps)
+	fmt.Println("data的值为：",data)
 	data["total"] = models.GetTagTotal(maps)
 
 	// 返回json信息，还有data数据
