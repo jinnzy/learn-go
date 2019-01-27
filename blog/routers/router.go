@@ -2,8 +2,8 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/learn-go/cmdb/pkg/setting"
-	"github.com/learn-go/cmdb/routers/api/v1"
+	"github.com/learn-go/blog/pkg/setting"
+	"github.com/learn-go/blog/routers/api/v1"
 )
 
 func InitRouter() *gin.Engine {

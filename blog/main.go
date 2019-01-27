@@ -3,9 +3,11 @@ package main
 import (
 	"net/http"
 	"fmt"
-	"github.com/learn-go/cmdb/pkg/setting"
-	"github.com/learn-go/cmdb/routers"
-	)
+	"github.com/learn-go/blog/pkg/setting"
+	"github.com/learn-go/blog/routers"
+	"github.com/learn-go/blog/pkg/logging"
+	"go.uber.org/zap"
+)
 
 func main() {
 	router := routers.InitRouter()
@@ -16,8 +18,8 @@ func main() {
 	//maps["state"] = 1
 	//a := models.GetArticles(0,2,maps)
 	//fmt.Println(a)
-
-	fmt.Println(setting.HttpPort,setting.ReadTimeout,setting.WriteTimeout)
+	log := logging.InitLogger()
+	log.Info("info",zap.String("addr",setting.RunMode))
 	s := &http.Server{
 		Addr: fmt.Sprintf(":%d",setting.HttpPort),
 		Handler: router,

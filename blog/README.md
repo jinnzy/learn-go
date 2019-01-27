@@ -51,3 +51,9 @@ tag:
 127.0.0.1:8000/api/v1/tags  获取所有tag
 
 ```
+# 日志库
+```
+
+govendor fetch go.uber.org/zap/zapcore
+govendor fetch go.uber.org/zap
+```

@@ -4,12 +4,12 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/Unknwon/com"
 	"github.com/astaxie/beego/validation"
-	"github.com/learn-go/cmdb/pkg/e"
-	"github.com/learn-go/cmdb/models"
+	"github.com/learn-go/blog/pkg/e"
+	"github.com/learn-go/blog/models"
 	"log"
 	"net/http"
-	"github.com/learn-go/cmdb/pkg/util"
-	"github.com/learn-go/cmdb/pkg/setting"
+	"github.com/learn-go/blog/pkg/util"
+	"github.com/learn-go/blog/pkg/setting"
 )
 
 //  获取单个文章
