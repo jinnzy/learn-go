@@ -40,7 +40,7 @@ INSERT INTO `blog`.`blog_auth` (`id`, `username`, `password`) VALUES (null, 'tes
 包：
 ```
 beego的表单验证
-govendor fetch github.com/astaxie/beego/validation
+
 mysql driver
 github.com/go-sql-driver/mysql
 ```
@@ -53,7 +53,6 @@ tag:
 ```
 # 日志库
 ```
-
 govendor fetch go.uber.org/zap/zapcore
 govendor fetch go.uber.org/zap
 ```
