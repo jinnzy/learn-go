@@ -1,0 +1,6 @@
+package cmdb
+
+
+func main()  {
+
+}
