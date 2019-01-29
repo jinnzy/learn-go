@@ -1,6 +1,0 @@
-package cmdb
-
-
-func main()  {
-
-}
