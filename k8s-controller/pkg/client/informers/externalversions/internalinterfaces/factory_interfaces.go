@@ -27,7 +27,7 @@ import (
 	cache "k8s.io/client-go/tools/cache"
 )
 
-// NewInformerFunc takes versioned.Interface and time.Duration to return a SharedIndexInformer.
+// NewInformerFunc takes versioned.Interface and gettime.Duration to return a SharedIndexInformer.
 type NewInformerFunc func(versioned.Interface, time.Duration) cache.SharedIndexInformer
 
 // SharedInformerFactory a small interface to allow for adding an informer without an import cycle

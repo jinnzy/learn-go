@@ -1,6 +1,6 @@
 package webhook
 // 解析git post过来的json
-type Git_conf struct {
+type GitConf struct {
 	Object_kind string `json:"object_kind"`
 	Event_name string `json:"event_name"`
 	Before string `json:"before"`

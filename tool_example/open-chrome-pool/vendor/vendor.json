@@ -1,0 +1,349 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "n8Q0rtypMWoWr3B83tCeLoLoxuk=",
+			"path": "github.com/chromedp/cdproto",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "RGvxkc2/vHnybb28lBSx2bNe/RI=",
+			"path": "github.com/chromedp/cdproto/accessibility",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "ejVYrYSluHIhreXecW7AqiNMg1k=",
+			"path": "github.com/chromedp/cdproto/animation",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "83OV/PnS3YpQl6y52DERSBmS2a4=",
+			"path": "github.com/chromedp/cdproto/applicationcache",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "zyaGHbtu/dsg/xGnBaMrjSEcbak=",
+			"path": "github.com/chromedp/cdproto/audits",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "qDY5HGdyQpcjpavOi1zcMsZ+IjY=",
+			"path": "github.com/chromedp/cdproto/backgroundservice",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "gIKkULNwgh1g5+TjwbE+jHSPBgo=",
+			"path": "github.com/chromedp/cdproto/browser",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "rlfNbehjSii0xMV+zV0JCEO9H1M=",
+			"path": "github.com/chromedp/cdproto/cachestorage",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "GtJ12SrW7V9ruQuCgRIIA1R7Yis=",
+			"path": "github.com/chromedp/cdproto/cast",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "f0zbqsZwJBh8Jq3zW/XDcqmk5Ts=",
+			"path": "github.com/chromedp/cdproto/cdp",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "5poNvpNkty/89keyV9AN/ZCjgQA=",
+			"path": "github.com/chromedp/cdproto/css",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "/+X6/m1H00HkDYLaXP9g1E/BXaI=",
+			"path": "github.com/chromedp/cdproto/database",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "yLgCYeBYuSr05+Yws7s7tYmsZuY=",
+			"path": "github.com/chromedp/cdproto/debugger",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "IclIaCXUUhR/e3+OTpq6NpeC0qY=",
+			"path": "github.com/chromedp/cdproto/deviceorientation",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "dB1XrLh4q/+mjxaDrNqrRpqhO3I=",
+			"path": "github.com/chromedp/cdproto/dom",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "32tC6CmZjRQXgjMXeIMYtXW7mSs=",
+			"path": "github.com/chromedp/cdproto/domdebugger",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "Kkas+kBVE0h3/Muz0hVsuzO5lCk=",
+			"path": "github.com/chromedp/cdproto/domsnapshot",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "qIxA6/7uiqWlJig/C5CQZwLvQAQ=",
+			"path": "github.com/chromedp/cdproto/domstorage",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "LemNYMGXUm/n5aIoE3/s7ThrZ+c=",
+			"path": "github.com/chromedp/cdproto/emulation",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "OIKC+LOLtpiLNTTQdX454EbesMM=",
+			"path": "github.com/chromedp/cdproto/fetch",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "FDVWoZRLFZMUQf0BQcQ47Q9glzw=",
+			"path": "github.com/chromedp/cdproto/headlessexperimental",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "cciskplJqPFyoYt3FlxY0527+zQ=",
+			"path": "github.com/chromedp/cdproto/heapprofiler",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "x4JxsgZS6i9DOW7JPZhdtU9DLqI=",
+			"path": "github.com/chromedp/cdproto/indexeddb",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "/gfG0eIHyGujl7ONXlIMcwYVzvE=",
+			"path": "github.com/chromedp/cdproto/input",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "xaDjE26BgByfjQCf70sHcBvRdIE=",
+			"path": "github.com/chromedp/cdproto/inspector",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "pag0qkGli3tur1oBJqCf7Rwl1Z0=",
+			"path": "github.com/chromedp/cdproto/io",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "uvxEH+i9fBx6yTggTrHWcaH4wAk=",
+			"path": "github.com/chromedp/cdproto/layertree",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "z3nTZu2oRRg9EswRKwma4nJwwek=",
+			"path": "github.com/chromedp/cdproto/log",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "jWSPJO+fvdWiHyAZmJ73FLtBdW0=",
+			"path": "github.com/chromedp/cdproto/memory",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "kWML0PogddTIi5f9VTG7SQIzF9E=",
+			"path": "github.com/chromedp/cdproto/network",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "6Y/iR8r5t+cAj2tVg/v3vmYfsPA=",
+			"path": "github.com/chromedp/cdproto/overlay",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "SwejTCvMSRHafYt1eLL11tM1jLc=",
+			"path": "github.com/chromedp/cdproto/page",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "P3Ckj2i5j/bGZ8i/aJqKrvcB34Y=",
+			"path": "github.com/chromedp/cdproto/performance",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "L2ny4NRMB0qAVEu0k2zSMMYd1Ck=",
+			"path": "github.com/chromedp/cdproto/profiler",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "SqewLO1WgFkMMuXekrjqtY/qUcc=",
+			"path": "github.com/chromedp/cdproto/runtime",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "2Ky0yqduGi2Fh4WxZ7JsuKl/Ts8=",
+			"path": "github.com/chromedp/cdproto/security",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "rSmPa7x81Fby/NRJqmW0ZNjdb7Q=",
+			"path": "github.com/chromedp/cdproto/serviceworker",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "HtOzVbCAGcYIhsADIUqiknIJZtM=",
+			"path": "github.com/chromedp/cdproto/storage",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "KXC60oLQVHB5Fh2WErPatmNrkNc=",
+			"path": "github.com/chromedp/cdproto/systeminfo",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "iokp1PCsuCbho0wSj+83g50+d84=",
+			"path": "github.com/chromedp/cdproto/target",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "w1kn3jnyi5cj72zuDC6QCT1mkcU=",
+			"path": "github.com/chromedp/cdproto/testing",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "JkOZ0ecWr0SGlBFk6SDaU7w9MO4=",
+			"path": "github.com/chromedp/cdproto/tethering",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "M4hpmtYOfBu+XMOsHMrUfHrtkh4=",
+			"path": "github.com/chromedp/cdproto/tracing",
+			"revision": "8d5e1d04ce19b7b3e61493418de25a281de3709d",
+			"revisionTime": "2019-03-27T00:36:20Z"
+		},
+		{
+			"checksumSHA1": "5oKnlECLIVwOceGp+OquzU8unOg=",
+			"path": "github.com/chromedp/chromedp",
+			"revision": "39bd95c850a4a1a375c73469fc19e16ada435141",
+			"revisionTime": "2019-02-26T01:08:39Z"
+		},
+		{
+			"checksumSHA1": "HEymvMf/bJ+zrv+P22s+vKTL6oc=",
+			"path": "github.com/chromedp/chromedp/client",
+			"revision": "39bd95c850a4a1a375c73469fc19e16ada435141",
+			"revisionTime": "2019-02-26T01:08:39Z"
+		},
+		{
+			"checksumSHA1": "9yLi1TkImM1yjWS7v6/3gmj62WM=",
+			"path": "github.com/chromedp/chromedp/kb",
+			"revision": "39bd95c850a4a1a375c73469fc19e16ada435141",
+			"revisionTime": "2019-02-26T01:08:39Z"
+		},
+		{
+			"checksumSHA1": "OyPd0mG2HXuAcmkOCheXCMGIkvE=",
+			"path": "github.com/chromedp/chromedp/runner",
+			"revision": "39bd95c850a4a1a375c73469fc19e16ada435141",
+			"revisionTime": "2019-02-26T01:08:39Z"
+		},
+		{
+			"checksumSHA1": "AjyuV7g0iMeUQKygjDQH6+Gq2Z8=",
+			"path": "github.com/disintegration/imaging",
+			"revision": "061e8a750a4db9667cdf9e2af7f4029ba506cb3b",
+			"revisionTime": "2019-03-08T17:29:37Z"
+		},
+		{
+			"checksumSHA1": "fu7IKee943urVeSyUgnvsBlATOc=",
+			"path": "github.com/gorilla/websocket",
+			"revision": "0ec3d1bd7fe50c503d6df98ee649d81f4857c564",
+			"revisionTime": "2019-03-06T00:42:57Z"
+		},
+		{
+			"checksumSHA1": "kzQQpntmdXZtGg2Ia2y5TWFTsak=",
+			"path": "github.com/knq/sysutil",
+			"revision": "f05b59f0f3075ba1bc5701ef0df4393a05ebd0e7",
+			"revisionTime": "2018-12-15T14:39:52Z"
+		},
+		{
+			"checksumSHA1": "JL5jOwOM+OC5tb73IBCRfsbvizk=",
+			"path": "github.com/mailru/easyjson",
+			"revision": "1de009706dbeb9d05f18586f0735fcdb7c524481",
+			"revisionTime": "2019-03-12T14:32:42Z"
+		},
+		{
+			"checksumSHA1": "euMY7SmXXGeDit90eC8FPzDT1SU=",
+			"path": "github.com/mailru/easyjson/buffer",
+			"revision": "1de009706dbeb9d05f18586f0735fcdb7c524481",
+			"revisionTime": "2019-03-12T14:32:42Z"
+		},
+		{
+			"checksumSHA1": "YC13LK4Q/WpbwVLBo5j0ZgDf0qw=",
+			"path": "github.com/mailru/easyjson/jlexer",
+			"revision": "1de009706dbeb9d05f18586f0735fcdb7c524481",
+			"revisionTime": "2019-03-12T14:32:42Z"
+		},
+		{
+			"checksumSHA1": "8uahZmmPJqtj80oEIRELmEF8DSE=",
+			"path": "github.com/mailru/easyjson/jwriter",
+			"revision": "1de009706dbeb9d05f18586f0735fcdb7c524481",
+			"revisionTime": "2019-03-12T14:32:42Z"
+		},
+		{
+			"checksumSHA1": "cXokCvyFg5J/JpxYNKB5JSqJH7g=",
+			"path": "golang.org/x/image/bmp",
+			"revision": "3fc05d484e9f77dd51816890e05f2602e4ca4d65",
+			"revisionTime": "2019-03-12T13:36:53Z"
+		},
+		{
+			"checksumSHA1": "o0mNSRvnzlA3oJl1ccrm/89Nha0=",
+			"path": "golang.org/x/image/tiff",
+			"revision": "3fc05d484e9f77dd51816890e05f2602e4ca4d65",
+			"revisionTime": "2019-03-12T13:36:53Z"
+		},
+		{
+			"checksumSHA1": "PF6VjvpNpOdR8epWH1Liyy7x1Qg=",
+			"path": "golang.org/x/image/tiff/lzw",
+			"revision": "3fc05d484e9f77dd51816890e05f2602e4ca4d65",
+			"revisionTime": "2019-03-12T13:36:53Z"
+		}
+	],
+	"rootPath": "github.com/learn-go/tool_example/open-chrome-pool"
+}

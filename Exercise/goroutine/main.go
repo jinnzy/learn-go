@@ -26,7 +26,7 @@ func main() {
 		case v := <-ch2:
 			fmt.Println(v)
 		case <- time.After(time.Second):
-			// 丢到值，time.After也是一个channel
+			// 丢到值，gettime.After也是一个channel
 			// 1秒没返回走这个分支，
 			fmt.Println("get data timeout")
 			time.Sleep(time.Second)

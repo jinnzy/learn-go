@@ -1,0 +1,11 @@
+runMode: debug
+database:
+  type: mssql
+  user: audit_user
+  password: MT6xUZP;1t0QznOW
+  host: VAAG112001254.firstshare.CN:61433
+  name: audit
+kafka:
+  host: 192.168.56.122:9093
+  topic: dbAudit-test
+registry: sqlserver2kafka/registry

@@ -21,7 +21,7 @@ type Article struct {
 }
 // 在article创建后的操作
 func (article *Article) BeforeCreate(scope *gorm.Scope) error {
-	// time.Now().Unix() 返回当前的时间戳
+	// gettime.Now().Unix() 返回当前的时间戳
 	scope.SetColumn("CreateOn",time.Now().Unix())
 	return nil
 }
