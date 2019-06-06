@@ -106,9 +106,11 @@ func main() {
 	// memory
 	item[1] = map[string]string{"endpoint": "vlnx","counter": "mem.memfree"}
 	// os ext4
-	item[2] = map[string]string{"endpoint": "vlnx","counter": "df.bytes.free.percent/fstype=ext4,mount=/"}
+	//item[2] = map[string]string{"endpoint": "vlnx","counter": "df.bytes.free.percent/fstype=ext4,mount=/"}
+	item[2] = map[string]string{"endpoint": "vlnx","counter": "df.bytes.free/fstype=ext4,mount=/"}
 	// os xfs
-	item[3] = map[string]string{"endpoint": "vlnx","counter": "df.bytes.free.percent/fstype=xfs,mount=/"}
+	//item[3] = map[string]string{"endpoint": "vlnx","counter": "df.bytes.free.percent/fstype=xfs,mount=/"}
+	item[3] = map[string]string{"endpoint": "vlnx","counter": "df.bytes.free/fstype=xfs,mount=/"}
 	// mysql ext4 data
 	item[4] = map[string]string{"endpoint": "vlnx022","counter": "df.bytes.free.percent/fstype=ext4,mount=/opt/mysql/data"}
 	// mongo xfs data

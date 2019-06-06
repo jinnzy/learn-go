@@ -1,34 +1,41 @@
 package main
 
 import (
-	"net/http"
-	"fmt"
-	"io/ioutil"
+"gopkg.in/gomail.v2"
+"strconv"
 )
 
-func main()  {
+func SendMail(mailTo []string,subject string, body string ) error {
+	//定义邮箱服务器连接信息，如果是阿里邮箱 pass填密码，qq邮箱填授权码
+	mailConn := map[string]string {
+		"user": "jinzhy@fxiaoke.com",
+		"pass": "Aa15941473777",
+		"host": "smtp.exmail.qq.com",
+		"port": "465",
+	}
 
-	client := &http.Client{}
-	url := fmt.Sprintf("http://192.168.30.75:8999/checkJobName?value=mavent12321est")
-	fmt.Println(url)
-	// 生成http request
-	req, err := http.NewRequest("GET", url, nil)
-	// 增加账号密码认证
-	req.SetBasicAuth("root","1234qwer")
-	if err != nil {
-		// handle error
-		fmt.Println("GET ERROR:%d", err)
+	port, _ := strconv.Atoi(mailConn["port"]) //转换端口类型为int
+
+	m := gomail.NewMessage()
+	m.SetHeader("From","XD Game" + "<" + mailConn["user"] + ">")  //这种方式可以添加别名，即“XD Game”， 也可以直接用<code>m.SetHeader("From",mailConn["user"])</code> 读者可以自行实验下效果
+	m.SetHeader("To", mailTo...)  //发送给多个用户
+	m.SetHeader("Subject", subject)  //设置邮件主题
+	m.SetBody("text/html", body)     //设置邮件正文
+
+	d := gomail.NewDialer(mailConn["host"], port, mailConn["user"], mailConn["pass"])
+
+	err := d.DialAndSend(m)
+	return err
+
+}
+func main()  {
+	//定义收件人
+	mailTo := []string {
+		"839444083@qq.com",
 	}
-	// 提交请求
-	resp, err := client.Do(req)
-	if err != nil {
-		resp.Body.Close()
-		fmt.Println("BODY CLOSE ERR:", err)
-	}
-	defer resp.Body.Close()
-	body, err1 := ioutil.ReadAll(resp.Body)
-	if err1 != nil {
-		fmt.Println("READ BODY ERR:%d", err1)
-	}
-	fmt.Println(string(body))
+	//邮件主题为"Hello"
+	subject := "Hello"
+	// 邮件正文
+	body := "Good"
+	SendMail(mailTo, subject, body)
 }

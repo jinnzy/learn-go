@@ -1,21 +1,18 @@
 package main
 
 import (
-		"time"
 	"fmt"
+	"time"
 )
 
-const (
-	Man = 1
-	Female = 2
-
-)
 
 func main()  {
-	second := time.Now().Unix()
-	if (second % Female == 0 ){
-		fmt.Println("female")
-	}else {
-		fmt.Println("man")
-	}
+	var i int
+
+	go func() {
+		i+=1
+		fmt.Println(i)
+	}()
+	fmt.Println(i)
+	time.Sleep(10 * time.Second)
 }
