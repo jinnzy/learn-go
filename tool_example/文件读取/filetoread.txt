@@ -1,0 +1,14 @@
+  - job_name: '{{.Name}}'
+    metrics_path: "{{.MetricsPath}}"
+    consul_sd_configs:
+    #consul 地址
+      - server: '172.31.107.20:8500'
+        services: []
+        tags: ["exporter"]
+    relabel_configs:
+      - source_labels: ["__address__"]
+        regex:  '(.*):\d+'
+        target_label: host
+        replacement: '${1}'
+      #- source_labels: ["__meta_consul_service"]
+      #  target_label: job`

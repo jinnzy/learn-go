@@ -112,14 +112,16 @@ func main() {
 	//item[3] = map[string]string{"endpoint": "vlnx","counter": "df.bytes.free.percent/fstype=xfs,mount=/"}
 	item[3] = map[string]string{"endpoint": "vlnx","counter": "df.bytes.free/fstype=xfs,mount=/"}
 	// mysql ext4 data
-	item[4] = map[string]string{"endpoint": "vlnx022","counter": "df.bytes.free.percent/fstype=ext4,mount=/opt/mysql/data"}
+	item[4] = map[string]string{"endpoint": "vlnx022","counter": "df.bytes.free.percent/fstype=xfs,mount=/opt/mysql"}
 	// mongo xfs data
 	item[5] = map[string]string{"endpoint": "vlnx","counter": "df.bytes.free.percent/fstype=xfs,mount=/opt/mongo"}
 
 	for _,k := range item{
 
 		wg.Add(1)
-		go taskSendkey(ctxt,&wg, pool,k)
+		go func(k map[string]string) {
+			taskSendkey(ctxt,&wg, pool,k)
+		}(k)
 	}
 	wg.Wait()
 	time.Sleep(10 * time.Second)
